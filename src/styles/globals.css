@@ -1,0 +1,235 @@
+@import "tailwindcss";
+@import './root.css';
+
+@theme inline {
+  /* colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-secondaray: var(--secondary);
+  --color-light-s: var(--light-secondary);
+  --color-main-gray: var(--main-gray);
+  --color-light-gray: var(--light-gray);
+  --color-gray-d9: var(--gray-d9);
+  --color-gray-ec: var(--gray-ec);
+  --color-gray-f7: var(--gray-f7);
+  --color-gray-f1: var(--gray-f1);
+  --color-gray-very-light: var(--gray-very-light);
+  --color-dim-gray: var(--dim-gray);
+  --color-s-black: var(--secondary-black);
+  --color-purple-main: var(--purple-main);
+  --color-orange-main: var(--orange-main);
+  --color-light-purple: var(--light-purple);
+  --color-blue-main: var(--blue-main);
+  --color-s-gray: var(--secondary-gray);
+  --color-green-side: var(--green-side);
+  --color-pink-main: var(--pink-main);
+  --color-green-main: var(--green-main);
+  --color-red-main: var(--red-main);
+
+
+
+  --animate-toast-message: fadeup-n-fadedown 4s cubic-bezier(0.99, 0.01, 0.03, 0.76);
+  --animate-popout: popout .3s cubic-bezier(0.99, 0.01, 0.03, 0.76);
+  --animate-flash: flash .7s alternate-reverse infinite;
+  
+  /* sizes */
+  --small-size: var(--text-sm);
+}
+
+@keyframes fadeup-n-fadedown {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes popout {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes flash {
+    0% {
+      opacity: .2;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--light-gray);
+  margin: 0;
+  width: 100%;
+}
+
+.fx-scattered {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fx-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fx-even {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fx-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* texts */
+.text-10-500-s-black {
+  @apply text-[10px] font-medium text-s-black;
+}
+
+.text-10-500-s-gray {
+  @apply text-[10px] font-medium text-s-gray;
+} 
+
+.text-12-500-s-black {
+  @apply text-xs font-medium text-s-black;
+}
+
+.text-12-500-black {
+  @apply text-xs font-medium text-black;
+}
+
+.text-12-500-main-gray {
+  @apply text-xs font-medium text-main-gray;
+}
+
+.text-12-500-s-gray {
+  @apply text-xs font-medium text-s-gray;
+}
+
+.text-12-500-red-main {
+  @apply text-xs font-medium text-red-main;
+}
+
+.text-14-600-s-black {
+  @apply text-sm font-semibold text-s-black;
+}
+
+.text-14-500-black {
+  @apply text-sm font-medium text-black;
+}
+
+.text-14-600-black {
+  @apply text-sm font-semibold text-black;
+}
+
+.text-14-500-s-black {
+  @apply text-sm font-medium text-s-black;
+}
+
+.text-14-500-gray {
+  @apply text-sm font-medium text-main-gray;
+}
+
+.text-14-500-s-gray {
+  @apply text-sm font-medium text-s-gray;
+}
+
+.text-16-500-black {
+  @apply text-base font-medium text-black
+}
+
+.text-16-500-s-gray {
+  @apply text-base font-medium text-s-gray;
+}
+
+.text-16-500-s-black {
+  @apply text-base font-medium text-s-black;
+}
+
+.text-16-600-s-black {
+  @apply text-base font-semibold text-s-black;
+}
+
+.text-16-500-main-color {
+  @apply text-base font-medium text-primary
+}
+
+
+.text-20-700-s-black {
+  @apply text-xl font-bold text-s-black;
+}
+
+.text-24-700-s-black {
+  @apply text-2xl font-bold text-black;
+}
+
+.text-28-700-s-black {
+  @apply text-[28px] font-bold text-black;
+}
+
+.text-34-800-s-black {
+  @apply text-[34px] font-extrabold text-s-black;
+}
+
+/* borders */
+.r-10 {
+  @apply rounded-[10px];
+}
+
+
+/* buttons */
+.btn {
+    
+}
+
+/* boxes */
+.very-small-box {
+  @apply w-[min(450px,100%)];
+}
+
+.small-box {
+  @apply w-[min(550px,100%)];
+}
+
+.medium-box {
+  @apply w-[min(700px,100%)];
+}

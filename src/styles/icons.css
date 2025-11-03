@@ -1,0 +1,93 @@
+.dashboard,
+.tasks,
+.users,
+.arrow, 
+.import,
+.export,
+.search,
+.details,
+.like,
+.not_allowed,
+.plus,
+.trash,
+.edit {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .2s ease-in-out;
+}
+
+.arrow,
+.plus {
+    min-width: 11px;
+    min-height: 11px;
+}
+
+.details,
+.trash,
+.edit {
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.dashboard,
+.tasks,
+.users {
+    min-width: 18px;
+    min-height: 18px;
+}
+
+.search {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.not_allowed,
+.like {
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.dashboard {
+    background-image: url(../assets/icons/dashboard.svg);
+}
+
+.tasks {
+    background-image: url(../assets/icons/tasks.svg);
+}
+
+.users {
+    background-image: url(../assets/icons/users.svg);
+}
+
+.search {
+    background-image: url(../assets/icons/search-normal.svg);
+}
+
+.details {
+    background-image: url(../assets/icons/details_icon.svg);
+}
+
+.arrow {
+    background-image: url(../assets/icons/arrow_down.svg);
+}
+
+.like {
+    background-image: url(../assets/icons/like.svg);
+}
+
+.plus {
+    background-image: url(../assets/icons/plus-sign.svg);
+}
+
+.not_allowed {
+    background-image: url(../assets/icons/notallowed.svg);
+}
+
+.trash {
+    background-image: url(../assets/icons/trash.svg);
+}
+
+.edit {
+    background-image: url(../assets/icons/edit-2.svg);
+}
