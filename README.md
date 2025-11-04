@@ -37,6 +37,7 @@ It connects to a NestJS backend API and provides an interface for managing users
     ✅ Fully responsive layout
 
 🧰 Tech Stack
+
     | Category             | Technology                                                    |
     | -------------------- | ------------------------------------------------------------- |
     | **Framework**        | [Next.js 14](https://nextjs.org/)                             |
