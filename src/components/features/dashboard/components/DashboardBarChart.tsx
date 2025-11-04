@@ -22,11 +22,11 @@ const customGridHighlight: Plugin = {
     const xScale = scales["x"];
     if (!yScale || !xScale) return;
 
-    // 1️⃣ Hide default grid
+    // Hide default grid
     if (chart.options.scales?.y?.grid)
       chart.options.scales.y.grid.display = false;
 
-    // 2️⃣ Draw custom dashed Y grid lines
+    // Draw custom dashed Y grid lines
     const yTicks = yScale.ticks;
     ctx.save();
     ctx.strokeStyle = "rgba(0, 0, 0, 0.1)";
@@ -43,8 +43,8 @@ const customGridHighlight: Plugin = {
     });
     ctx.restore();
 
-    // 3️⃣ Highlight a specific bar by its label
-    const targetLabel = "Novembre"; // 🔹 Change this dynamically if needed
+    // Highlight a specific bar by its label
+    const targetLabel = "Novembre"; // Change this dynamically if needed
     const idx = chart.data.labels?.indexOf(targetLabel) ?? -1;
     if (idx === -1) return;
 
@@ -57,11 +57,11 @@ const customGridHighlight: Plugin = {
 
     const barWidth =
       xScale.getPixelForTick(idx + 1) - xScale.getPixelForTick(idx);
-    const halfBarWidth = barWidth * 0.4; // approximate bar width depending on bar thickness
+    const halfBarWidth = barWidth * 0.4; 
 
     ctx.save();
 
-    // 4️⃣ Draw vertical highlight line at the center of the bar
+    // Draw vertical highlight line at the center of the bar
     ctx.beginPath();
     ctx.setLineDash([6, 4]);
     ctx.moveTo(x, chartArea.top);
@@ -70,7 +70,7 @@ const customGridHighlight: Plugin = {
     ctx.lineWidth = 1;
     ctx.stroke();
 
-    // 5️⃣ Draw highlight circle at bar top
+    // Draw highlight circle at bar top
     ctx.setLineDash([]);
     ctx.beginPath();
     ctx.arc(x, y, 6, 0, 2 * Math.PI);

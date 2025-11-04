@@ -1,7 +1,7 @@
 import { cn } from "@/utils/helpers";
 import React from "react";
 
-// ---------------------- List ----------------------
+
 const ItemsList = React.forwardRef<
   HTMLUListElement,
   React.HTMLAttributes<HTMLUListElement>
@@ -21,7 +21,7 @@ const ItemsList = React.forwardRef<
 });
 ItemsList.displayName = "ItemsList";
 
-// ---------------------- Item ----------------------
+
 interface ItemProps extends React.LiHTMLAttributes<HTMLLIElement> {
   value: any;
   handleClick?: (value: any) => void;

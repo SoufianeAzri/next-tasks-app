@@ -18,8 +18,6 @@ const page = async () => {
     fetchStats(),
   ]);
 
-  console.log(stats);
-
   return (
     <div className="w-full">
       <div className="flex flex-col gap-6">

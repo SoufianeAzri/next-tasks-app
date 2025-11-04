@@ -8,7 +8,6 @@ export function useClickOutside<T extends HTMLElement>(
     const listener = (event: MouseEvent | TouchEvent) => {
       const el = ref?.current;
       if (!el || el.contains(event.target as Node)) {
-        // Ignore clicks inside the element
         return;
       }
       handler(event);

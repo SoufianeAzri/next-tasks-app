@@ -16,7 +16,7 @@ const Modal = forwardRef<HTMLDivElement, ModalProps>(
     ref
   ) => {
 
-    // Disable scrolling when modal is open
+
     useEffect(() => {
       if (open) {
         document.body.style.overflow = "hidden";
@@ -25,7 +25,7 @@ const Modal = forwardRef<HTMLDivElement, ModalProps>(
       }
     }, [open]);
 
-    // Don’t render if not open
+
     if (!open) return null;
 
     return (
@@ -34,13 +34,13 @@ const Modal = forwardRef<HTMLDivElement, ModalProps>(
         aria-modal="true"
         role="dialog"
       >
-        {/* Backdrop */}
+
         <div
           className="absolute inset-0 bg-black/50"
           onClick={() => backdropClose && onClose()}
         />
 
-        {/* Modal content */}
+
         <div
           ref={ref}
           className={cn(

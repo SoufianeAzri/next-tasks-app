@@ -64,35 +64,6 @@ export const TaskDetails = ({
 
   const { showToast } = useToast();
 
-  //   const changePeriorite = async (periorite: string) => {
-  //     if (task?.periorite === periorite) return;
-
-  //     if (isLoading) return;
-
-  //     try {
-  //       setIsLoading(true);
-
-  //       const res = await editTask(task?.id, {
-  //         periorite: periorite,
-  //       });
-
-  //       setTasks((prev) =>
-  //         prev.map((t: Task) => (t?.id === task?.id ? { ...t, ...res } : t))
-  //       );
-
-  //       showToast(
-  //         toast_messages.tasks.edit_task_periorite.message,
-  //         toast_messages.tasks.edit_task_periorite.title,
-  //         "1"
-  //       );
-
-  //       setIsLoading(false);
-  //     } catch (error) {
-  //       console.log(error);
-  //       setIsLoading(false);
-  //     }
-  //   };
-
   const changeTaskState = async (stateId: string) => {
     if (task?.stateId === stateId) return;
 

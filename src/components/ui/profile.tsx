@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Avatar from "boring-avatars";
-import { cn } from "@/utils/helpers"; // optional helper
+import { cn } from "@/utils/helpers";
 
 interface ProfileProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;

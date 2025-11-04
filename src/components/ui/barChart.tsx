@@ -22,7 +22,7 @@ ChartJS.register(
   Legend
 );
 
-// Define the props interface
+
 interface BarChartChartProps {
   data: ChartData<"bar">;
   options?: ChartOptions<"bar">;
@@ -30,7 +30,7 @@ interface BarChartChartProps {
   plugins: Plugin[];
 }
 
-// Component
+
 export const BarChart: React.FC<BarChartChartProps> = ({
   data,
   options,

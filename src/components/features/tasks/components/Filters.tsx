@@ -30,7 +30,7 @@ export const Filters: React.FC<FiltersProps> = ({
   count,
   text
 }) => {
-  // Normalize ID and label for either ListProps or User
+  // normalize ID and label for either ListProps or User
   const getItemId = (item: ListProps | User | State) =>
     (item as ListProps)._id ?? (item as User).id;
 

@@ -7,7 +7,7 @@ import { cn, localeFormatFr } from "@/utils/helpers";
 
 export interface DatePickerProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange"> {
-  date: Date | null; // ISO string or null
+  date: Date | null;
   onChangeAction: (value: Date | null) => void;
   placeholder?: string;
   error?: string;

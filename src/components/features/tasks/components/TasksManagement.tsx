@@ -111,14 +111,8 @@ export const TasksManagement = ({
     const activeType = active.data.current?.type;
     const overType = over.data.current?.type;
 
-    // Only handle same-type drag interactions
+    // only handle same-type drag interactions
     if (activeType !== overType) return;
-
-    if (activeType === "state") {
-      console.log(`🧩 Dragging state ${active.id} over state ${over.id}`);
-    } else if (activeType === "task") {
-      console.log(`🧱 Dragging task ${active.id} over task ${over.id}`);
-    }
   };
 
   /** When dragging ends (drop) */

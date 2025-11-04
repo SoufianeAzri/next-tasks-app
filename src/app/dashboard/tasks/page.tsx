@@ -13,8 +13,7 @@ const page = async () => {
     fetchAllUsersRelatedToTasks(),
   ]);
 
-  console.log(tasks);
-  console.log(states);
+  
   return (
     <div className="w-full flex flex-col gap-4">
       <TasksManagement

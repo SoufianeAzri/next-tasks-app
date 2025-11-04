@@ -28,7 +28,7 @@ export interface User {
   phoneNumber: string;
   image?: string;
   addedDate?: string;
-  role: "ADMIN" | "MANAGER" | "EMPLOYEE"; // Adjust based on your enum
+  role: "ADMIN" | "MANAGER" | "EMPLOYEE"; 
 }
 
 export interface Subtask {
@@ -48,7 +48,7 @@ export interface Task {
   id?: string;
   title: string;
   description: string;
-  addedDate?: string; // ISO string from Prisma (e.g., "2025-10-30T17:46:09.443Z")
+  addedDate?: string; 
   lastModified?: string;
   beginDate: string;
   finishDate: string;

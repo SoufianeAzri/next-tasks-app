@@ -679,7 +679,6 @@ export const TaskCard = React.memo(
               setStates={setStates}
               setTasks={setTasks}
               states={states}
-              // setTasks={setStates}
               task={task}
               edit={true}
             />

@@ -44,12 +44,12 @@ export const getDaysDifference = (
   const d1 = new Date(date1);
   const d2 = new Date(date2);
 
-  // Convert to UTC midnight to avoid timezone issues
+
   const utc1 = Date.UTC(d1.getFullYear(), d1.getMonth(), d1.getDate());
   const utc2 = Date.UTC(d2.getFullYear(), d2.getMonth(), d2.getDate());
 
   const diffMs = Math.abs(utc2 - utc1);
-  return Math.floor(diffMs / (1000 * 60 * 60 * 24)); // convert ms → days
+  return Math.floor(diffMs / (1000 * 60 * 60 * 24)); 
 };
 
 export const areIdArraysEqual = (arr1: string[], arr2: string[]): boolean => {

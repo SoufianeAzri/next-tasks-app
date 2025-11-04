@@ -8,7 +8,7 @@ import React, {
 } from "react";
 import { cn } from "@/utils/helpers";
 
-// ---------------------- Context ----------------------
+
 interface DropdownContextProps {
   open: boolean;
   toggle: () => void;
@@ -25,7 +25,7 @@ const useDropdown = () => {
   return context;
 };
 
-// ---------------------- Root Component ----------------------
+
 export interface DropdownProps
   extends React.HTMLAttributes<HTMLDivElement> {
   onSelect?: (item: any) => void;
@@ -87,7 +87,7 @@ const Dropdown = React.memo(React.forwardRef<HTMLDivElement, DropdownProps>(
 ));
 Dropdown.displayName = "Dropdown";
 
-// ---------------------- Trigger ----------------------
+
 const Trigger = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -107,7 +107,7 @@ const Trigger = React.forwardRef<
 });
 Trigger.displayName = "Trigger";
 
-// ---------------------- List ----------------------
+
 const List = React.forwardRef<
   HTMLUListElement,
   React.HTMLAttributes<HTMLUListElement>
@@ -161,7 +161,7 @@ const Item = React.forwardRef<HTMLLIElement, ItemProps>(
 );
 Item.displayName = "Item";
 
-// ---------------------- Icon ----------------------
+
 const Icon = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>

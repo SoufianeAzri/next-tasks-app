@@ -58,7 +58,7 @@ interface SearchFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
   onSearch?: (value: string) => void;
 }
 
-// 🔍 Input Subcomponent
+
 const SearchField = React.forwardRef<HTMLInputElement, SearchFieldProps>(
   ({ className, onSearch, placeholder, ...props }, ref) => {
     const { query, setQuery } = useSearchBar();

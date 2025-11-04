@@ -11,7 +11,7 @@ import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-// Define the props interface
+
 interface DoughnutChartProps {
   data: ChartData<"doughnut">;
   options?: ChartOptions<"doughnut">;
