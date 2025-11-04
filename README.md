@@ -93,8 +93,11 @@ Run the App
                         ┣ services/          # API calls via Axios
                         ┣ components/        # custom components
                 ┣ui/          # Reusable components (modals, toasts, button) 
-                ┣layouts/      # (SideBar, Header)
-    ┣ utils/             # Helpers, constants, and types
+                ┣layouts/     # (SideBar, Header)
+    ┣ utils/
+                ┣content/     # contains all the static data (messages, lists, texts)
+                ┣helpers/     # helpers function (date formatting, etc) 
+                ┣types/       # shared interfaces (User, State, Task)
     ┣ libs/              # External libraries (Axios)
     ┗ styles/            # Global CSS/Tailwind configuration
 
@@ -134,7 +137,7 @@ Run the App
 
 🧱 Technical Notes
 
-    Axios instance is configured in /lib/api.ts with automatic base URL and token headers.
+    Axios instance is configured in /lib/axios/index.ts with automatic base URL and token headers.
 
     Dnd-kit handles task movement between states — the UI updates optimistically before confirming with the backend.
 
