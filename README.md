@@ -60,7 +60,7 @@ It connects to a NestJS backend API and provides an interface for managing users
 
         npm install
 
-        or
+        # or
 
         yarn install
 
@@ -77,7 +77,7 @@ Run the App
     npm run dev
 
     Then open:
-    
+
     http://localhost:3000/dashboard
 
 
