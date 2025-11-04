@@ -77,7 +77,8 @@ Run the App
     npm run dev
 
     Then open:
-👉 http://localhost:3000/dashboard
+    
+    http://localhost:3000/dashboard
 
 
 
