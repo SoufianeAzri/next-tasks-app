@@ -349,7 +349,7 @@ export const AddTask = ({
             <p className="text-14-500-gray">Retour</p>
           </div>
           <h2 className="text-20-700-s-black">
-            {edit ? "Editer la tache" : "Ajouter la tache"}
+            {edit ? "Modifier la tâche" : "Ajouter une tâche"}
           </h2>
 
           <div className="w-[70px] h-2" />
@@ -357,11 +357,11 @@ export const AddTask = ({
 
         <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
           <FieldContainer>
-            <FieldTitle>Title</FieldTitle>
+            <FieldTitle>Intitulé</FieldTitle>
             <InputField
               id="title"
               name="title"
-              placeholder="Enter a title..."
+              placeholder="Veuillez renseigner ici l'intitulé de la tâche."
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
@@ -372,7 +372,7 @@ export const AddTask = ({
             <TextareaField
               id="description"
               name="description"
-              placeholder="Write your task description..."
+              placeholder="Veuillez renseigner ici la description de la tâche."
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
@@ -380,25 +380,25 @@ export const AddTask = ({
 
           <div className="w-full flex items-center gap-2 z-4">
             <FieldContainer className="w-1/2">
-              <FieldTitle>Start Date</FieldTitle>
+              <FieldTitle>Date de début</FieldTitle>
               <DatePicker
                 date={startDate}
                 onChangeAction={setStartDate}
-                placeholder="Choose a date"
+                placeholder="Date de début"
               />
             </FieldContainer>
             <FieldContainer className="w-1/2">
-              <FieldTitle>End Date</FieldTitle>
+              <FieldTitle>Date de fin</FieldTitle>
               <DatePicker
                 date={endDate}
                 onChangeAction={setEndDate}
-                placeholder="Choose a date"
+                placeholder="Date de fin"
               />
             </FieldContainer>
           </div>
 
           <FieldContainer>
-            <FieldTitle>Select Periorite</FieldTitle>
+            <FieldTitle>Sélectionner la périorite</FieldTitle>
             <Dropdown className="w-full" onSelect={setPeriorite}>
               <Trigger
                 className={cn(
@@ -414,7 +414,7 @@ export const AddTask = ({
                     periorite && "text-white text-sm"
                   )}
                 >
-                  {periorite ? periorite.periorite : "Select Periorite"}
+                  {periorite ? periorite.periorite : "Sélectionner la périorite"}
                 </p>
                 <Icon className="arrow" />
               </Trigger>
@@ -430,12 +430,12 @@ export const AddTask = ({
           </FieldContainer>
 
           <FieldContainer>
-            <FieldTitle>Select State</FieldTitle>
+            <FieldTitle>Sélectionner statut</FieldTitle>
             <div className="flex items-center gap-2">
               <Dropdown className="w-[calc(100%-45px)]" onSelect={() => {}}>
                 <Trigger className="flex items-center gap-2 border border-solid border-gray-d9 px-4 py-2.5 rounded-xl transition hover:scale-[1.01] active:scale-[1.02]">
                   <p className="text-14-500-gray">
-                    {stateSelected ? stateSelected.name : "Select State"}
+                    {stateSelected ? stateSelected.name : "Sélectionner statut"}
                   </p>
                   <Icon className="arrow" />
                 </Trigger>
@@ -485,16 +485,16 @@ export const AddTask = ({
           </FieldContainer>
 
           <UsersSearch
-            title="Select Manager"
-            placeholder="Select .."
+            title="Sélectionnez un responsable"
+            placeholder="Recherche de responsable."
             selectedUsers={manager}
             setSelectedUsers={setManager}
             type="single"
           />
 
           <UsersSearch
-            title="Select Team Members"
-            placeholder="Select .."
+            title="Sélectionnez de team Members"
+            placeholder="Recherche de membre."
             selectedUsers={teamMembers}
             setSelectedUsers={setTeamMembers}
             customDeleteUser={edit ? onDeleteUser : undefined}
@@ -509,7 +509,7 @@ export const AddTask = ({
               <LoadingDots />
             ) : (
               <ButtonText className={cn("text-[14px] text-gray-d9")}>
-                {edit ? "Editer la tache" : "Ajouter une tashe"}
+                {edit ? "Modifier la tache" : "Ajouter une tashe"}
               </ButtonText>
             )}
           </Button>

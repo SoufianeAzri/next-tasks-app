@@ -24,8 +24,8 @@ const page = async () => {
     <div className="w-full">
       <div className="flex flex-col gap-6">
         <div className="flex justify-start flex-col">
-          <h3 className="text-28-700-s-black">Dashboard</h3>
-          <p className="text-14-500-gray">Good morning Soufiane 👋🏻</p>
+          <h3 className="text-28-700-s-black">Tableau de bord</h3>
+          <p className="text-14-500-gray">Bonjour Soufiane 👋🏻</p>
         </div>
 
         <div className="flex items-start gap-8 flex-wrap">
@@ -33,7 +33,7 @@ const page = async () => {
             <div className="flex flex-wrap items-stretch gap-3">
               {/* grid grid-cols-[repeat(auto-fill,minmax(330px,1fr))] */}
               <StatsCard
-                title="Users"
+                title="Utilisateurs"
                 percentage={stats.users?.change}
                 value={stats.users?.count}
                 percentageStyles="bg-light-purple"
@@ -42,7 +42,7 @@ const page = async () => {
               />
 
               <StatsCard
-                title="States"
+                title="Statut"
                 percentage={stats.states?.change}
                 value={stats.states?.count}
                 percentageStyles="bg-[#ebfbff]"
@@ -51,7 +51,7 @@ const page = async () => {
               />
 
               <StatsCard
-                title="Tasks"
+                title="Tâches"
                 percentage={stats.tasks?.change}
                 value={stats.tasks?.count}
                 percentageStyles="bg-blue-main/20"
@@ -61,7 +61,7 @@ const page = async () => {
             </div>
 
             <div className="flex flex-col gap-3">
-              <h3 className="text-20-700-s-black">States Per Month</h3>
+              <h3 className="text-20-700-s-black">Statut Per Month</h3>
               <div className="flex flex-col gap-2">
                 <div className="flex flex-wrap w-full gap-6 items-start">
                   <DashboardBarChart statsData={stats?.statesStats} />
@@ -73,7 +73,7 @@ const page = async () => {
             </div>
 
             <div className="hidden flex-col gap-3 w-full xl:flex">
-              <h3 className="text-20-700-s-black">Recent Tasks</h3>
+              <h3 className="text-20-700-s-black">Tâches Récentes</h3>
               {stats.recentTasks?.map((task: Task) => (
                 <TaskCard
                   key={task.id}
@@ -87,7 +87,7 @@ const page = async () => {
           <div className="w-[400px] grow">
             <div className="w-full flex flex-col gap-8">
               <div className="w-full flex flex-col gap-4">
-                <h3 className="text-20-700-s-black">Recent Activities</h3>
+                <h3 className="text-20-700-s-black">Activités récentes</h3>
                 <div className="flex flex-col gap-3 pl-6 relative before:absolute before:h-[calc(100%-20%)] before:left-0 before:border-l before:border-dashed before:border-gray-d9">
                   {activities.length !== 0 &&
                     activities.map(
@@ -118,7 +118,7 @@ const page = async () => {
                               />
                               <div className="flex flex-col gap-0.5">
                                 <h5 className="text-12-500-s-gray">
-                                  Ajouter le {formatDate(user.addedDate)}
+                                  Ajouté le {formatDate(user.addedDate)}
                                 </h5>
                                 <p className="text-16-500-black">
                                   {user?.name}

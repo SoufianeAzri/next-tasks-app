@@ -175,11 +175,11 @@ export const AddUser = ({
 
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <FieldContainer>
-          <FieldTitle>User name</FieldTitle>
+          <FieldTitle>Nom</FieldTitle>
           <InputField
             id="name"
             name="name"
-            placeholder="Enter user name..."
+            placeholder="Veuillez renseigner ici le nom d'utilisateur."
             value={userData?.name}
             onChange={(e) =>
               setUserData({
@@ -190,12 +190,12 @@ export const AddUser = ({
           />
         </FieldContainer>
         <FieldContainer>
-          <FieldTitle>User email</FieldTitle>
+          <FieldTitle>Email</FieldTitle>
           <InputField
             id="email"
             name="email"
             type="email"
-            placeholder="Enter user name..."
+            placeholder="Veuillez renseigner ici le email d'utilisateur."
             value={userData?.email}
             onChange={(e) =>
               setUserData({
@@ -206,11 +206,11 @@ export const AddUser = ({
           />
         </FieldContainer>
         <FieldContainer>
-          <FieldTitle>User phone number</FieldTitle>
+          <FieldTitle>Numéro de téléphone</FieldTitle>
           <InputField
             id="phoneNumber"
             name="phoneNumber"
-            placeholder="Enter user phone number..."
+            placeholder="Veuillez renseigner ici le téléphone d'utilisateur."
             value={userData?.phoneNumber}
             onChange={(e) =>
               setUserData({
@@ -221,7 +221,7 @@ export const AddUser = ({
           />
         </FieldContainer>
         <FieldContainer>
-          <FieldTitle>Select Role</FieldTitle>
+          <FieldTitle>Sélectionner un rôle</FieldTitle>
           <Dropdown className="w-full" onSelect={handleSelectRole}>
             <Trigger
               className={cn(
@@ -231,7 +231,7 @@ export const AddUser = ({
               <p className={cn("text-14-500-gray")}>
                 {userData.role
                   ? roles.find((r) => r.value === userData?.role)?.name
-                  : "Select Role"}
+                  : "Sélectionner un rôle"}
               </p>
               <Icon className="arrow" />
             </Trigger>
@@ -261,7 +261,7 @@ export const AddUser = ({
             <LoadingDots />
           ) : (
             <ButtonText className={cn("text-[14px] text-gray-d9")}>
-              {edit ? "Editer l'utilisateur" : "Ajouter une utilisateur"}
+              {edit ? "Modifier l'utilisateur" : "Ajouter une utilisateur"}
             </ButtonText>
           )}
         </Button>

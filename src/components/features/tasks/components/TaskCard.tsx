@@ -274,13 +274,13 @@ export const TaskCard = React.memo(
                     className="text-12-500-s-gray"
                     onClick={() => setOpenEditTask(true)}
                   >
-                    Edit
+                    Modifier
                   </Item>
                   <Item
                     className="text-12-500-red-main"
                     onClick={() => onDeleteTask()}
                   >
-                    Delete
+                    Supprimer
                   </Item>
                 </List>
               </Dropdown>
@@ -504,13 +504,13 @@ export const TaskCard = React.memo(
                           className="text-12-500-s-gray"
                           onClick={() => setOpenEditTask(true)}
                         >
-                          Edit
+                          Modifier
                         </Item>
                         <Item
                           className="text-12-500-red-main"
                           onClick={() => onDeleteTask()}
                         >
-                          Archive
+                          Supprimer
                         </Item>
                       </List>
                     </Dropdown>
@@ -607,13 +607,13 @@ export const TaskCard = React.memo(
                             className="text-12-500-s-gray"
                             onClick={() => setOpenEditTask(true)}
                           >
-                            Edit
+                            Modifier
                           </Item>
                           <Item
                             className="text-12-500-red-main"
                             onClick={() => onDeleteTask()}
                           >
-                            Archive
+                            Supprimer
                           </Item>
                         </List>
                       </Dropdown>

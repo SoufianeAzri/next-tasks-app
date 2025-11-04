@@ -33,7 +33,7 @@ export const UsersManagement = ({ users }: UsersManagementProps) => {
         <div className="flex justify-between items-center">
           <div className="flex items-start gap-2">
             <CustomSearchBar
-              placeholder="Search for users ..."
+              placeholder="Recherche d'utilisateur ..."
               handleSearch={(e) => setUsersQuery(e)}
             />
             <Button

@@ -48,7 +48,7 @@ export const DashboardDoughnutChart = ({
   return (
     <div className="w-[35%] flex justify-end items-center grow">
       <div className="w-full flex flex-col">
-        <h4 className="text-16-600-s-black pb-2">States Distribution</h4>
+        <h4 className="text-16-600-s-black pb-2">Statut Distribution</h4>
 
         <div className="lg:h-[250px] h-[265px] flex justify-center items-center">
           <DoughnutChart

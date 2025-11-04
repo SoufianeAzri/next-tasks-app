@@ -101,26 +101,26 @@ export const AddSubtask = ({
           <div className="arrow rotate-90 translate-y-px" />
           <p className="text-14-500-gray">Retour</p>
         </div>
-        <h2 className="text-20-700-s-black">Ajouter la sous tache</h2>
+        <h2 className="text-20-700-s-black">Ajouter une sous-tâche</h2>
 
         <div className="w-[70px] h-2" />
       </div>
 
       <form className="flex flex-col gap-3" onSubmit={onAddSubTask}>
         <FieldContainer>
-          <FieldTitle>Title</FieldTitle>
+          <FieldTitle>Intitulé</FieldTitle>
           <InputField
             id="title"
             name="title"
-            placeholder="Enter a title..."
+            placeholder="Veuillez renseigner ici l'intitulé de la sous-tâche."
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
         </FieldContainer>
 
         <UsersSearch
-          title="Select Manager"
-          placeholder="Select .."
+          title="Sélectionnez un responsable"
+          placeholder="Rechercher ..."
           selectedUsers={manager}
           setSelectedUsers={setManager}
           type="single"
@@ -129,8 +129,8 @@ export const AddSubtask = ({
         />
 
         <UsersSearch
-          title="Select Team Members"
-          placeholder="Select .."
+          title="Sélectionnez un members"
+          placeholder="Rechercher ..."
           selectedUsers={teamMembers}
           setSelectedUsers={setTeamMembers}
           mode="offline"
@@ -146,7 +146,7 @@ export const AddSubtask = ({
             <LoadingDots />
           ) : (
             <ButtonText className={cn("text-[14px] text-gray-d9")}>
-              Ajouter une sous tashe
+              Ajouter une sous-tâche
             </ButtonText>
           )}
         </Button>

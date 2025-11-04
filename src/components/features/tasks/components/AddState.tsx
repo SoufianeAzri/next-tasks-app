@@ -154,7 +154,7 @@ export const AddState = ({
           <p className="text-14-500-gray">Retour</p>
         </div>
         <h2 className="text-20-700-s-black">
-          {edit ? "Ajouter la status" : "Editer la status"}
+          {edit ? "Ajouter une status" : "Modifier la status"}
         </h2>
 
         <div className="w-[70px] h-2" />
@@ -163,11 +163,11 @@ export const AddState = ({
       <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
         <div className="flex items-end gap-2">
           <FieldContainer className="w-[calc(100%-45px)]">
-            <FieldTitle>Title</FieldTitle>
+            <FieldTitle>Intitulé</FieldTitle>
             <InputField
               id="title"
               name="title"
-              placeholder="Enter a title..."
+              placeholder="Veuillez renseigner ici l'intitulé de la statut."
               value={state.name}
               onChange={(e) => {
                 setState({
@@ -199,7 +199,7 @@ export const AddState = ({
             <LoadingDots />
           ) : (
             <ButtonText className={cn("text-[14px] text-gray-d9")}>
-              {edit ? "Editer une statut" : "Ajouter une statut"}
+              {edit ? "Modifier la statut" : "Ajouter une statut"}
             </ButtonText>
           )}
         </Button>

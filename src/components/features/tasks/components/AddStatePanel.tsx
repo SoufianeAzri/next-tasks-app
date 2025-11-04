@@ -87,7 +87,7 @@ export const AddStatePanel = ({ setStates }: AddStatePanelProps) => {
                 <InputField
                   id="title"
                   name="title"
-                  placeholder="Enter a title..."
+                  placeholder="Veuillez renseigner ici l'intitulé de la tâche."
                   value={state?.name}
                   onChange={(e) => {
                     setState({

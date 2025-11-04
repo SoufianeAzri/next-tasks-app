@@ -99,7 +99,7 @@ export const UserCard = ({ user, setUsers }: UserCardProps) => {
                 className="text-12-500-s-gray"
                 onClick={() => setEditUser(true)}
               >
-                Edit
+                Modifier
               </Item>
               <Item
                 className="text-12-500-red-main"
@@ -107,7 +107,7 @@ export const UserCard = ({ user, setUsers }: UserCardProps) => {
                   if (user.id) onDeleteUser(user.id);
                 }}
               >
-                Delete
+                Supprimer
               </Item>
             </List>
           </Dropdown>
@@ -142,7 +142,7 @@ export const UserCard = ({ user, setUsers }: UserCardProps) => {
                   className="text-12-500-s-gray"
                   onClick={() => setEditUser(true)}
                 >
-                  Edit
+                  Modifier
                 </Item>
                 <Item
                   className="text-12-500-red-main"
@@ -150,7 +150,7 @@ export const UserCard = ({ user, setUsers }: UserCardProps) => {
                     if (user.id) onDeleteUser(user.id);
                   }}
                 >
-                  Delete
+                  Supprimer
                 </Item>
               </List>
             </Dropdown>

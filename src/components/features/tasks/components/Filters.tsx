@@ -41,7 +41,7 @@ export const Filters: React.FC<FiltersProps> = ({
   if (type === "single") {
     return (
       <Dropdown onSelect={onAction}>
-        <Trigger className="flex items-center gap-2">
+        <Trigger className="flex items-center gap-2 min-w-[120px]">
           <p className="text-14-500-s-gray">
             {!selected ? "Select Item" : selected}
           </p>
@@ -69,7 +69,7 @@ export const Filters: React.FC<FiltersProps> = ({
       <Dropdown onSelect={onAction}>
         <Trigger className="flex items-center gap-2">
           <p className="text-14-500-s-gray">
-            {!count ? `Select ${text}` : `${count} ${text} Selected`}
+            {!count ? `Filtrer par ${text}` : `${count} ${text} Selectioner`}
           </p>
           <Icon className="arrow mb-0.5" />
         </Trigger>

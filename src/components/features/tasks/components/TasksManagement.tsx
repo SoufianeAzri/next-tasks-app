@@ -220,7 +220,7 @@ export const TasksManagement = ({
         <div className="flex flex-wrap items-start gap-2 grow lg:grow-0 lg:flex-nowrap">
           <CustomSearchBar
             handleSearch={(e) => setTaskQuery(e)}
-            placeholder="Search for tasks ..."
+            placeholder="Recherche de tâches ..."
           />
           <Button
             variant="primary"
@@ -233,7 +233,7 @@ export const TasksManagement = ({
           </Button>
         </div>
 
-        <div className="flex justify-center lg:justify-between gap-4 w-[350px] lg:grow-0 grow mx-auto lg:mx-0">
+        <div className="flex justify-center lg:justify-between gap-4 w-[420px] lg:grow-0 grow mx-auto lg:mx-0 lg:flex-nowrap flex-wrap">
           <Filters
             type="single"
             list={tasksViewList}
@@ -245,7 +245,7 @@ export const TasksManagement = ({
             list={localeStates}
             selectedList={selectedStates}
             count={selectedStates.length}
-            text="States"
+            text="Statut"
             onAction={(v) =>
               handleSelectedItem(v, selectedStates, setSelectedStates)
             }
@@ -256,7 +256,7 @@ export const TasksManagement = ({
             list={usersRelated}
             selectedList={selectedUsers}
             count={selectedUsers.length}
-            text="Users"
+            text="Membre"
             onAction={(v) =>
               handleSelectedItem(v, selectedUsers, setSelectedUsers)
             }

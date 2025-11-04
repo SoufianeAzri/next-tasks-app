@@ -199,7 +199,7 @@ export const TaskDetails = ({
 
             <div className="flex items-start justify-between lg:gap-20 md:justify-start">
               <div className="flex flex-col gap-2">
-                <h5 className="text-12-500-s-gray">Priorite</h5>
+                <h5 className="text-12-500-s-gray">Priorité</h5>
                 <Dropdown
                   open={open}
                   onOpenChange={(isOpen) => {
@@ -237,7 +237,7 @@ export const TaskDetails = ({
               </div>
               <div className="h-12 w-0.5 rounded-xl bg-gray-d9" />
               <div className="flex flex-col gap-2">
-                <h5 className="text-12-500-s-gray">States</h5>
+                <h5 className="text-12-500-s-gray">Statut</h5>
                 <Dropdown
                   open={openStates}
                   onOpenChange={(isOpen) => {
