@@ -1,114 +1,117 @@
 const toast_messages = {
   errors: {
     empty_fields: {
-      title: "Empty fields errors",
-      message: "There is fields not field yet !",
+      title: "Champs vides",
+      message: "Des champs ne sont pas encore remplis !",
     },
   },
 
   dates_errors: {
     start_date: {
-      title: "Starting date error",
-      message: "Starting date must be higher or equals today",
+      title: "Erreur de date de début",
+      message: "La date de début doit être supérieure ou égale à aujourd’hui.",
     },
     end_date: {
-      title: "End date error",
-      message: "End date must be higher or equals starting date",
+      title: "Erreur de date de fin",
+      message: "La date de fin doit être supérieure ou égale à la date de début.",
     },
   },
 
   tasks: {
     add_task: {
-      title: "Task Add",
-      message: "The task has been added successfully !",
+      title: "Ajout de tâche",
+      message: "La tâche a été ajoutée avec succès !",
     },
 
     edit_task: {
-      title: "Task Edit",
-      message: "The task has been edited successfully !",
+      title: "Modification de tâche",
+      message: "La tâche a été modifiée avec succès !",
     },
 
     edit_task_state: {
-      title: "Task state edit",
-      message: "The task state has been edited successfully !",
+      title: "Modification de l’état de la tâche",
+      message: "L’état de la tâche a été modifié avec succès !",
     },
 
     delete_member_error: {
-      title: "Delete member error",
-      message: "Cannot delete the member because it related to subtask !",
+      title: "Erreur de suppression de membre",
+      message: "Impossible de supprimer le membre car il est lié à une sous-tâche !",
     },
 
     edit_task_periorite: {
-      title: "Periorite edit",
-      message: "The task periorite has been edited successfully !",
+      title: "Modification de priorité",
+      message: "La priorité de la tâche a été modifiée avec succès !",
     },
 
     delete_task: {
-      title: "Task Delete",
-      message: "The task has been deleted successfully !",
+      title: "Suppression de tâche",
+      message: "La tâche a été supprimée avec succès !",
     },
 
     add_subtask: {
-      title: "Subtask Add",
-      message: "The subtask has been added successfully !",
+      title: "Ajout de sous-tâche",
+      message: "La sous-tâche a été ajoutée avec succès !",
     },
 
     subtask_edit: {
-      title: "Subtask edit",
-      message: "The subtask has been edited successfully !",
+      title: "Modification de sous-tâche",
+      message: "La sous-tâche a été modifiée avec succès !",
     },
 
     subtask_delete: {
-      title: "Subtask delete",
-      message: "The subtask has been deleted successfully !",
+      title: "Suppression de sous-tâche",
+      message: "La sous-tâche a été supprimée avec succès !",
     },
   },
 
   states: {
     add_state: {
-      title: "State Add",
-      message: "The state has been added successfully !",
+      title: "Ajout d’état",
+      message: "L’état a été ajouté avec succès !",
     },
 
     edit_state: {
-      title: "State Edit",
-      message: "The state has been edited successfully !",
+      title: "Modification d’état",
+      message: "L’état a été modifié avec succès !",
     },
 
     delete_state: {
-      title: "State Delete",
-      message: "The state has been deleted successfully !",
+      title: "Suppression d’état",
+      message: "L’état a été supprimé avec succès !",
     },
 
     delete_state_error: {
-      title: "State Delete Error",
-      message: "Cannot delete this state because it has related tasks !",
+      title: "Erreur de suppression d’état",
+      message: "Impossible de supprimer cet état car il est lié à des tâches existantes !",
     },
 
     conflict_error: {
-      title: "State Add",
-      message: "State with this name or color already exists",
+      title: "Erreur d’ajout d’état",
+      message: "Un état avec ce nom ou cette couleur existe déjà.",
     },
   },
 
   users: {
     add_user: {
-      message: "The user has benn added successfully",
-      title: "Add User",
+      message: "L’utilisateur a été ajouté avec succès.",
+      title: "Ajout d’utilisateur",
     },
     edit_user: {
-      message: "The user has been updated successfully",
-      title: "Updated User",
+      message: "L’utilisateur a été mis à jour avec succès.",
+      title: "Mise à jour d’utilisateur",
     },
     delete_user: {
-      message: "The user has been deleted successfully",
-      title: "Updated User",
+      message: "L’utilisateur a été supprimé avec succès.",
+      title: "Suppression d’utilisateur",
     },
-    conflict_error: { message: "The user already exists", title: "User Error" },
+    conflict_error: {
+      message: "Cet utilisateur existe déjà.",
+      title: "Erreur d’utilisateur",
+    },
     delte_error: {
       message:
-        "Cannot delete user — they are assigned to one or more tasks or subtasks.",
-      title: "Delete User Error",
+        "Impossible de supprimer l’utilisateur — il est assigné à une ou plusieurs tâches ou sous-tâches.",
+      title: "Erreur de suppression d’utilisateur",
     },
   },
 };
