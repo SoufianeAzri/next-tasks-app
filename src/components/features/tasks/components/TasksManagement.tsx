@@ -233,7 +233,7 @@ export const TasksManagement = ({
           </Button>
         </div>
 
-        <div className="flex justify-center lg:justify-between gap-4 w-[460px] lg:grow-0 grow mx-auto lg:mx-0 lg:flex-nowrap flex-wrap">
+        <div className="flex justify-center lg:justify-end gap-4 w-[460px] lg:grow-0 grow mx-auto lg:mx-0 lg:flex-nowrap flex-wrap">
           <Filters
             type="single"
             list={tasksViewList}
