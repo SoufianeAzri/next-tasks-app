@@ -134,7 +134,24 @@ Run the App
     ToastProvider shows contextual success/error notifications.
 
 🧩 Example Screenshot 
-![Dashboard Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101509.png)
+    Dashboard Previw 
+    ![Dashboard Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101509.png)
+    Tasks kanban Preview
+    ![Tasks kanban Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101551.png)
+    Task Details Preview
+    ![Task Details Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101602.png)
+    Task backlog Preview
+    ![Task backlog Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101615.png)
+    Add Task Preview
+    ![Add Task Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101634.png)
+    Edit Task Preview
+    ![Add Task Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20102753.png)
+    Add state
+    ![Add Task Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20102735.png)
+    Users Preview
+    ![Users Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101648.png)
+    Add User Preview
+    ![Add User Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101657.png)
 
 
 ## Getting Started
@@ -151,7 +168,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/dashboard](http://localhost:3000/dashboard) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

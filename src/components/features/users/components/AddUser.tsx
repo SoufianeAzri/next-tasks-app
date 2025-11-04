@@ -167,7 +167,7 @@ export const AddUser = ({
           <p className="text-14-500-gray">Retour</p>
         </div>
         <h2 className="text-20-700-s-black">
-          {edit ? "Editer la tache" : "Ajouter la tache"}
+          {edit ? "Modifier l'utilisateur" : "Ajouter une utilisateur"}
         </h2>
 
         <div className="w-[70px] h-2" />

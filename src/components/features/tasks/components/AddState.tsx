@@ -154,7 +154,7 @@ export const AddState = ({
           <p className="text-14-500-gray">Retour</p>
         </div>
         <h2 className="text-20-700-s-black">
-          {edit ? "Ajouter une status" : "Modifier la status"}
+          {edit ? "Modifier la statut" : "Ajouter une statut"}
         </h2>
 
         <div className="w-[70px] h-2" />
