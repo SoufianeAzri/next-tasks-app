@@ -139,7 +139,7 @@ Run the App
     Tasks kanban Preview
     ![Tasks kanban Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101551.png)
     Task Details Preview
-    ![Task Details Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101602.png)
+    ![Task Details Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20103236.png)
     Task backlog Preview
     ![Task backlog Preview](./src/assets/images/Capture%20d'écran%202025-11-04%20101615.png)
     Add Task Preview
