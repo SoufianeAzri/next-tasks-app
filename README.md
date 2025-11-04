@@ -23,7 +23,7 @@ It connects to a NestJS backend API and provides an interface for managing users
 
     🧱 Technical Notes
 
-    📄 Example Data
+    📄 Example Screenshot
 
 ✨ Features
 
