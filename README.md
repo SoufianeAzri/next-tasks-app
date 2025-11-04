@@ -50,11 +50,14 @@ It connects to a NestJS backend API and provides an interface for managing users
 
 
 ⚙️ Installation
+
     1️⃣ Clone the repository
+
         git clone https://github.com/SoufianeAzri/next-tasks-app.git
         cd next-tasks-app
 
     2️⃣ Install dependencies
+
         npm install
 
         or
@@ -70,13 +73,17 @@ It connects to a NestJS backend API and provides an interface for managing users
 
 
 Run the App
+
     npm run dev
+
     Then open:
 👉 http://localhost:3000/dashboard
 
 
 
 🧠 Project Structure
+
+
     src/
     ┣ app/               # Next.js app router (pages, routes, layouts)
     ┣ components/        
@@ -90,7 +97,9 @@ Run the App
     ┣ libs/              # External libraries (Axios)
     ┗ styles/            # Global CSS/Tailwind configuration
 
+
 📊 UI Overview
+
     🏠 Dashboard
 
         Displays:
