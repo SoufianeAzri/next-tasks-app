@@ -47,7 +47,14 @@ export const UsersSearch = ({
         if (mode === "online") {
           res = await searchUsers(keyword);
         } else {
-          res = defaultList || [];
+          const lowerQuery = keyword?.toLowerCase();
+          if (defaultList) {
+            res = defaultList.filter((user) =>
+              user.name.toLowerCase().includes(lowerQuery)
+            ) || [];
+          } else {
+            res = [];
+          }
         }
 
         if (res.length !== 0) {
